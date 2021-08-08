@@ -9,4 +9,7 @@
 		"ghcr.io/devcontainers/features/nvidia-cuda:1.0.7": {}
 	}
 
-	// Use 'mounts' to make the cargo cache persistent in a Docker Volume
+	// Use 'mounts' to make the cargo cache persistent in a Docker Volume.
+	// "mounts": [
+	// 	{
+	// 		"source": "devcontainer-cargo-cache
