@@ -97,3 +97,9 @@ jobs:
           override: true
       - uses: actions-rs/cargo@v1
         with:
+          command: build
+          args: --target aarch64-apple-darwin --release
+      - uses: actions/upload-artifact@v3
+        with:
+          name: augre_aarch64-apple-darwin
+          path: target/aarch64-apple-darwin/release/augre
