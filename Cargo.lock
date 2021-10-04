@@ -54,4 +54,5 @@ dependencies = [
 [[package]]
 name = "anstyle"
 version = "1.0.3"
-sou
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b84bf
