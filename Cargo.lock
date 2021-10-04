@@ -47,3 +47,11 @@ dependencies = [
  "anstyle-parse",
  "anstyle-query",
  "anstyle-wincon",
+ "colorchoice",
+ "utf8parse",
+]
+
+[[package]]
+name = "anstyle"
+version = "1.0.3"
+sou
