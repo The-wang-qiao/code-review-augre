@@ -78,4 +78,5 @@ dependencies = [
 [[package]]
 name = "anstyle-wincon"
 version = "2.1.0"
-source = "registry+https:/
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "58f54d10c6dfa51283a066ceab3ec1ab78d1
