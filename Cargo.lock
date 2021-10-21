@@ -88,4 +88,5 @@ dependencies = [
 [[package]]
 name = "anyhow"
 version = "1.0.75"
-source = "registry+htt
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a4668cab20f66d8d020e1fbc0ebe
