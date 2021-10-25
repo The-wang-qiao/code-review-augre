@@ -106,4 +106,12 @@ dependencies = [
 name = "augre"
 version = "0.1.0"
 dependencies = [
- "a
+ "anyhow",
+ "chatgpt_rs",
+ "clap",
+ "config",
+ "dialoguer",
+ "serde",
+ "termimad",
+ "tokio",
+ "
