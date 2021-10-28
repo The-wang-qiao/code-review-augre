@@ -140,4 +140,6 @@ dependencies = [
 ]
 
 [[package]]
-nam
+name = "base64"
+version = "0.13.1"
+source = "registry+https://github.com/rust-lang/crates.io-i
