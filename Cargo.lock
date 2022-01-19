@@ -203,4 +203,10 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 name = "chatgpt_rs"
 version = "1.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0c8a252c161b36850bd202c735a7f22471
+checksum = "0c8a252c161b36850bd202c735a7f224710a67758d91220d50a3bfd38dd1c7fc"
+dependencies = [
+ "derive_builder",
+ "reqwest",
+ "serde",
+ "serde_json",
+ 
