@@ -209,4 +209,12 @@ dependencies = [
  "reqwest",
  "serde",
  "serde_json",
- 
+ "thiserror",
+ "tokio",
+ "url",
+]
+
+[[package]]
+name = "clap"
+version = "4.4.4"
+source = "regis
