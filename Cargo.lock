@@ -239,4 +239,5 @@ dependencies = [
 [[package]]
 name = "clap_derive"
 version = "4.4.2"
-sourc
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0862016ff20d69b84
