@@ -295,4 +295,5 @@ dependencies = [
 [[package]]
 name = "coolor"
 version = "0.5.0"
-source = "registry+https://gith
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "af4d7a805ca0d92f8c61a31c809d4323fdaa
