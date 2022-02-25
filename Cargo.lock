@@ -302,4 +302,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "cpufea
+name = "cpufeatures"
+version = "0.2.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+che
