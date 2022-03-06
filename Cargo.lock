@@ -319,4 +319,10 @@ dependencies = [
  "cfg-if",
  "crossbeam-channel",
  "crossbeam-deque",
- "crossbe
+ "crossbeam-epoch",
+ "crossbeam-queue",
+ "crossbeam-utils",
+]
+
+[[package]]
+name = "crossbeam-channel"
