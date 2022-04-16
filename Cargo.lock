@@ -415,4 +415,5 @@ dependencies = [
 [[package]]
 name = "darling"
 version = "0.14.4"
-source = "registry+https://github.com/r
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7b750cb3417fd1b327431a470f388520309479ab0bf5e323505
