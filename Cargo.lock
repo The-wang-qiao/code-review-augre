@@ -425,4 +425,6 @@ dependencies = [
 [[package]]
 name = "darling_core"
 version = "0.14.4"
-source = "registry+https://github.com/rust-lang/crates.io
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "109c1ca6e6b7f82cc233a97004ea8ed7ca123a9af07a8230878fcfda9b158bf0"
+depe
