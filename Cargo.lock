@@ -439,4 +439,5 @@ dependencies = [
 [[package]]
 name = "darling_macro"
 version = "0.14.4"
-source = "registry+https://git
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a4aab4dbc9f7611d8b55048
