@@ -434,3 +434,9 @@ dependencies = [
  "quote",
  "strsim",
  "syn 1.0.109",
+]
+
+[[package]]
+name = "darling_macro"
+version = "0.14.4"
+source = "registry+https://git
