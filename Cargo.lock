@@ -469,4 +469,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "derive_builder_macr
+name = "derive_builder_macro"
+version = "0.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-inde
