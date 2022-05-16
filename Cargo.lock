@@ -480,4 +480,6 @@ dependencies = [
 
 [[package]]
 name = "dialoguer"
-v
+version = "0.10.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+che
