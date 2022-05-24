@@ -503,4 +503,5 @@ dependencies = [
 [[package]]
 name = "dlv-list"
 version = "0.3.0"
-source = "registry
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0688c2a7f92e427f44895cd63841bff7
