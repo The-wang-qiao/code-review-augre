@@ -535,4 +535,5 @@ dependencies = [
 [[package]]
 name = "errno-dragonfly"
 version = "0.1.2"
-source = "registry+https://gi
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "aa68f1b12764fab894
