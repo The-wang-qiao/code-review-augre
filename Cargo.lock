@@ -574,4 +574,6 @@ dependencies = [
 
 [[package]]
 name = "futures-core"
-version = "0
+version = "0.3.28"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4bca583
