@@ -563,4 +563,7 @@ dependencies = [
  "percent-encoding",
 ]
 
-[[pack
+[[package]]
+name = "futures-channel"
+version = "0.3.28"
+source = "registry+https://github.com/rust-la
