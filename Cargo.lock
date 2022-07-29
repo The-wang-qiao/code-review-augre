@@ -590,4 +590,6 @@ dependencies = [
 ]
 
 [[package]]
-name = 
+name = "futures-sink"
+version = "0.3.28"
+source = "registry+https://github.com/rust-lang/crates.io-in
