@@ -610,4 +610,12 @@ dependencies = [
  "futures-core",
  "futures-macro",
  "futures-task",
- "pin-project-lit
+ "pin-project-lite",
+ "pin-utils",
+ "slab",
+]
+
+[[package]]
+name = "generic-array"
+version = "0.14.7"
+s
