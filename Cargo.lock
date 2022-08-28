@@ -636,3 +636,7 @@ dependencies = [
  "wasi",
 ]
 
+[[package]]
+name = "gimli"
+version = "0.28.0"
+source = "registry+https://github.com/rust-lang/crates.i
