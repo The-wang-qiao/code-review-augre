@@ -727,4 +727,11 @@ dependencies = [
  "futures-core",
  "futures-util",
  "h2",
- 
+ "http",
+ "http-body",
+ "httparse",
+ "httpdate",
+ "itoa",
+ "pin-project-lite",
+ "socket2 0.4.9",
+ "t
