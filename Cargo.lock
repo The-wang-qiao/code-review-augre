@@ -771,4 +771,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "indexma
+name = "indexmap"
+version = "1.9.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+c
