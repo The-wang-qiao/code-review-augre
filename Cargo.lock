@@ -815,4 +815,5 @@ dependencies = [
 [[package]]
 name = "lazy-regex"
 version = "3.0.2"
-source = "registry+https://
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e723bd417b2df60a0f6a2b682
