@@ -809,4 +809,10 @@ checksum = "96b0db21af676c1ce64250b5f40f3ce2cf27e4e47cb91ed91eb6fe9350b430c1"
 dependencies = [
  "pest",
  "pest_derive",
- "serde
+ "serde",
+]
+
+[[package]]
+name = "lazy-regex"
+version = "3.0.2"
+source = "registry+https://
