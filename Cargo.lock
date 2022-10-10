@@ -804,4 +804,5 @@ dependencies = [
 [[package]]
 name = "json5"
 version = "0.4.1"
-source = "registry+
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "96b0db21af676c1ce64250b5f40f3ce2
