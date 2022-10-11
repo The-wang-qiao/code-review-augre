@@ -826,4 +826,5 @@ dependencies = [
 [[package]]
 name = "lazy-regex-proc_macros"
 version = "3.0.1"
-source = "registry+ht
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0f0a1d9139f0ee2e8
