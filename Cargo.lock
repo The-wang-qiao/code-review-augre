@@ -869,4 +869,7 @@ dependencies = [
  "scopeguard",
 ]
 
-[[package
+[[package]]
+name = "log"
+version = "0.4.20"
+source = "registry+https://github.com/rust-la
