@@ -884,4 +884,5 @@ checksum = "8f232d6ef707e1956a43342693d2a31e72989554d58299d7a88738cc95b0d35c"
 [[package]]
 name = "memoffset"
 version = "0.9.0"
-source = "registry+https://github.c
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5a634b1c61a95585bd15607c6ab0c4e5b22
