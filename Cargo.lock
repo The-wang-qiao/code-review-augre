@@ -908,4 +908,5 @@ dependencies = [
 [[package]]
 name = "minimal-lexical"
 version = "0.2.1"
-so
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "68354c5c6bd36d73ff3feceb05efa5
