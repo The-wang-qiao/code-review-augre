@@ -901,4 +901,11 @@ name = "minimad"
 version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f6c4610f430e49b882fcaad0186134150d4d74fc76080b0a61f7000460c2e268"
-dependencies =
+dependencies = [
+ "once_cell",
+]
+
+[[package]]
+name = "minimal-lexical"
+version = "0.2.1"
+so
