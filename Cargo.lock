@@ -977,4 +977,7 @@ dependencies = [
  "hashbrown",
 ]
 
-[[pac
+[[package]]
+name = "parking_lot"
+version = "0.12.1"
+source = "registry+https://github.com/
