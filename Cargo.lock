@@ -980,4 +980,5 @@ dependencies = [
 [[package]]
 name = "parking_lot"
 version = "0.12.1"
-source = "registry+https://github.com/
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3742b2c103b9f06bc9fff0a37ff4912935851bee6d36f3c02b
