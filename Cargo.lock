@@ -1003,4 +1003,5 @@ dependencies = [
 [[package]]
 name = "pathdiff"
 version = "0.2.1"
-source = "registr
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8835116a5c179084a
