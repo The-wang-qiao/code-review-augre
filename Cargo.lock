@@ -997,4 +997,10 @@ dependencies = [
  "libc",
  "redox_syscall",
  "smallvec",
- "window
+ "windows-targets 0.48.5",
+]
+
+[[package]]
+name = "pathdiff"
+version = "0.2.1"
+source = "registr
