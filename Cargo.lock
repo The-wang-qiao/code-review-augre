@@ -1022,3 +1022,8 @@ dependencies = [
  "thiserror",
  "ucd-trie",
 ]
+
+[[package]]
+name = "pest_derive"
+version = "2.7.3"
+source = "registry+h
