@@ -1026,4 +1026,5 @@ dependencies = [
 [[package]]
 name = "pest_derive"
 version = "2.7.3"
-source = "registry+h
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a2bee7be22ce7918f641a33f08e3f43388
