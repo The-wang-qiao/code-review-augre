@@ -1036,4 +1036,5 @@ dependencies = [
 [[package]]
 name = "pest_generator"
 version = "2.7.3"
-source = "regis
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d1511785c5e98d79a05e8a6bc3
