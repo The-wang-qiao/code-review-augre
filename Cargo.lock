@@ -1037,4 +1037,8 @@ dependencies = [
 name = "pest_generator"
 version = "2.7.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d1511785c5e98d79a05e8a6bc3
+checksum = "d1511785c5e98d79a05e8a6bc34b4ac2168a0e3e92161862030ad84daa223141"
+dependencies = [
+ "pest",
+ "pest_meta",
+ "proc-macro
