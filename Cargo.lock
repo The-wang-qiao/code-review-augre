@@ -1059,4 +1059,6 @@ dependencies = [
 
 [[package]]
 name = "pin-project-lite"
-version 
+version = "0.2.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8afb450
