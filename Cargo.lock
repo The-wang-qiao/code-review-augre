@@ -1081,4 +1081,5 @@ dependencies = [
 [[package]]
 name = "quote"
 version = "1.0.33"
-source = "registry+https://github.com/rus
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5267fca4496028628a95160fc423a33e8b2e6af
