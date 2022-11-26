@@ -1099,4 +1099,5 @@ dependencies = [
 [[package]]
 name = "regex"
 version = "1.9.5"
-source = "registry+htt
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "697061221ea1b4a94a624f67d0ae2bfe4e2
