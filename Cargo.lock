@@ -1151,4 +1151,11 @@ dependencies = [
  "rustls",
  "rustls-pemfile",
  "serde",
- "serde_json
+ "serde_json",
+ "serde_urlencoded",
+ "tokio",
+ "tokio-rustls",
+ "tower-service",
+ "url",
+ "wasm-bindgen",
+ 
