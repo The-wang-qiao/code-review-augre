@@ -1165,4 +1165,7 @@ dependencies = [
 ]
 
 [[package]]
-na
+name = "ring"
+version = "0.16.20"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum
