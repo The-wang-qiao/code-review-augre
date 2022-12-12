@@ -1182,4 +1182,5 @@ dependencies = [
 [[package]]
 name = "ron"
 version = "0.7.1"
-source = "registry+https://github.
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "88073939a61e5b7680558e6be56b419e208420c2adb9
