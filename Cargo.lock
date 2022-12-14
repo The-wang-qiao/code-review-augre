@@ -1193,4 +1193,5 @@ dependencies = [
 [[package]]
 name = "rust-ini"
 version = "0.18.0"
-source = "registry+https://github.com/rust-lang
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f6d5f2436026b4f6e79dc829837d467
