@@ -1203,4 +1203,5 @@ dependencies = [
 [[package]]
 name = "rustc-demangle"
 version = "0.1.23"
-source = "registr
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d626bb9dae77e28219937af045c257c28bfd3f69
