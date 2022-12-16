@@ -1220,4 +1220,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "ru
+name = "rustls"
+version = "0.21.7"
+source = "registry+https://github.com/rust-lang/crates.io-in
