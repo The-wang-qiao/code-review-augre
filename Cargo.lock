@@ -1274,4 +1274,5 @@ dependencies = [
 
 [[package]]
 name = "serde"
-versio
+version = "1.0.188"
+source = "registry+https://github.com/rust-lang/crates.io-inde
