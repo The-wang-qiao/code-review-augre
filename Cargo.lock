@@ -1294,4 +1294,6 @@ dependencies = [
 
 [[package]]
 name = "serde_json"
-v
+version = "1.0.107"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+check
