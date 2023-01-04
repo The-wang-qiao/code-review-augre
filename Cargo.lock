@@ -1306,4 +1306,5 @@ dependencies = [
 [[package]]
 name = "serde_urlencoded"
 version = "0.7.1"
-source = "reg
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d3491c14715ca2294c4d6a88
