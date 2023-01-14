@@ -1384,4 +1384,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "64a4a911eed85daf18834cfaa86a79b7d266ff93ff5ba14005426219480ed662"
 dependencies = [
  "libc",
- "w
+ "winapi",
+]
+
+[[package]]
+name = "socket2"
+version = "0.5.4"
+source = "registry+htt
