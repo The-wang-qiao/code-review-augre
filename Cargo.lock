@@ -1390,4 +1390,5 @@ dependencies = [
 [[package]]
 name = "socket2"
 version = "0.5.4"
-source = "registry+htt
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4031e820eb552adee9295814c0ced9
