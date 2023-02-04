@@ -1422,4 +1422,5 @@ dependencies = [
 
 [[package]]
 name = "syn"
-versio
+version = "2.0.37"
+source = "registry+https://github.com/rust-lang/crates
