@@ -1448,4 +1448,9 @@ dependencies = [
 name = "termimad"
 version = "0.25.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2229aaf689febef17c66f4724bf84c52d3dade1fce12b1cdf4d
+checksum = "2229aaf689febef17c66f4724bf84c52d3dade1fce12b1cdf4d9e409647ee253"
+dependencies = [
+ "coolor",
+ "crossbeam",
+ "crossterm",
+ "lazy-regex",
