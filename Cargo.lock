@@ -1447,4 +1447,5 @@ dependencies = [
 [[package]]
 name = "termimad"
 version = "0.25.2"
-source = "registry+https://github.com/rust-
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2229aaf689febef17c66f4724bf84c52d3dade1fce12b1cdf4d
