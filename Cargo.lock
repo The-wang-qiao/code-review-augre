@@ -1434,4 +1434,5 @@ dependencies = [
 [[package]]
 name = "tempfile"
 version = "3.8.0"
-s
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum
