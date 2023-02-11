@@ -1444,4 +1444,7 @@ dependencies = [
  "windows-sys 0.48.0",
 ]
 
-[
+[[package]]
+name = "termimad"
+version = "0.25.2"
+source = "registry+https://github.com/rust-
