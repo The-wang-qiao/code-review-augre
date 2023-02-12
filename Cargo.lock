@@ -1454,3 +1454,11 @@ dependencies = [
  "crossbeam",
  "crossterm",
  "lazy-regex",
+ "minimad",
+ "serde",
+ "thiserror",
+ "unicode-width",
+]
+
+[[package]]
+name = "thiserror"
