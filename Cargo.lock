@@ -1462,3 +1462,6 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
+version = "1.0.48"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checks
