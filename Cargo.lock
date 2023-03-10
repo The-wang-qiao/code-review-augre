@@ -1516,4 +1516,6 @@ dependencies = [
 
 [[package]]
 name = "tokio-macros"
-version
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "630bdcf245f78
