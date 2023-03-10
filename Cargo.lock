@@ -1528,4 +1528,5 @@ dependencies = [
 [[package]]
 name = "tokio-rustls"
 version = "0.24.1"
-source = "registry+htt
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c28327cf380ac148141087fbfb9de9d7bd4
