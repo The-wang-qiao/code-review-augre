@@ -1559,4 +1559,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "tower-s
+name = "tower-service"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksu
