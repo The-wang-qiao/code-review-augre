@@ -1577,4 +1577,6 @@ dependencies = [
 
 [[package]]
 name = "tracing-core"
-vers
+version = "0.1.31"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum =
