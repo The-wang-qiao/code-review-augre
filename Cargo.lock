@@ -1593,4 +1593,5 @@ checksum = "3528ecfd12c466c6f163363caf2d02a71161dd5e1cc6ae7b34207ea2d42d81ed"
 [[package]]
 name = "typenum"
 version = "1.17.0"
-sourc
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "42ff0bf0c6
