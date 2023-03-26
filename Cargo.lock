@@ -1587,4 +1587,5 @@ dependencies = [
 [[package]]
 name = "try-lock"
 version = "0.2.4"
-source = "r
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3528ecfd12c466c6f163363caf2d02a7
