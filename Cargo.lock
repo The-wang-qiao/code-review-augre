@@ -1649,4 +1649,6 @@ dependencies = [
 
 [[package]]
 name = "utf8parse"
-versi
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "711b962
