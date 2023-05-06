@@ -1693,4 +1693,12 @@ dependencies = [
  "bumpalo",
  "log",
  "once_cell",
- "proc-macro2
+ "proc-macro2",
+ "quote",
+ "syn 2.0.37",
+ "wasm-bindgen-shared",
+]
+
+[[package]]
+name = "wasm-bindgen-futures"
+version 
