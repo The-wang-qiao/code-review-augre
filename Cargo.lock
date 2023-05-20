@@ -1726,4 +1726,8 @@ name = "wasm-bindgen-macro-support"
 version = "0.2.87"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "54681b18a46765f095758388f2d0cf16eb8d4169b639ab575a8f5693af210c7b"
-depe
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.37",
+ "wasm-bindgen-
