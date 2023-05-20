@@ -1730,4 +1730,10 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 2.0.37",
- "wasm-bindgen-
+ "wasm-bindgen-backend",
+ "wasm-bindgen-shared",
+]
+
+[[package]]
+name = "wasm-bindgen-shared"
+versi
