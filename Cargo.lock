@@ -1722,4 +1722,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "wasm-bindgen-m
+name = "wasm-bindgen-macro-support"
+version = "0.2.87"
+source = "registry+https://github.com/rust-l
