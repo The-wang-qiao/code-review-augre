@@ -1767,4 +1767,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "winapi-i6
+name = "winapi-i686-pc-windows-gnu"
+version = "0.4.0"
+source = "registry+https://github.com/rust-la
