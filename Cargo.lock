@@ -1790,4 +1790,5 @@ dependencies = [
 [[package]]
 name = "windows-sys"
 version = "0.48.0"
-source =
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "677d2418be
