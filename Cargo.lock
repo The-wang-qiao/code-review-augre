@@ -1814,4 +1814,5 @@ dependencies = [
 [[package]]
 name = "windows-targets"
 version = "0.48.5"
-source = "registry+https://github.com/rust-lang/crates.i
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9a2fa6e2155d7247be68c096456083145c183cbbbc2764150dda45
