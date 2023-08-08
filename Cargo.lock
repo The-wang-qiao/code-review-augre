@@ -1932,4 +1932,5 @@ dependencies = [
 [[package]]
 name = "yansi"
 version = "0.5.1"
-source = "registry+https://github.co
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "09041cd90cf85f7f8b2df60c646f853b7f535c
