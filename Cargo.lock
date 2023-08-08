@@ -1923,4 +1923,5 @@ dependencies = [
 [[package]]
 name = "yaml-rust"
 version = "0.4.5"
-source 
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "56c1936c4cc
