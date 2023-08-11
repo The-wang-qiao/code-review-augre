@@ -17,3 +17,13 @@ services:
       - CRIA_USE_GPU=true
       - CRIA_GPU_LAYERS=32
     deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+  zipkin-server:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
