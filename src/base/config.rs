@@ -1,3 +1,6 @@
 //! The configuration module.
 
-use c
+use config::{Environment, File};
+use serde::{Deserialize, Serialize};
+
+use super::types::{Res, Mode};
