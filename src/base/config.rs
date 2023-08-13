@@ -10,3 +10,8 @@ struct OptionalConfig {
     openai_key: Option<String>,
     mode: Option<Mode>,
     model_url: Option<String>,
+    cria_port: Option<u16>,
+}
+
+/// The configuration type.
+#[derive(Serialize,
