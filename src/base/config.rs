@@ -7,4 +7,6 @@ use super::types::{Res, Mode};
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
 struct OptionalConfig {
-    openai_
+    openai_key: Option<String>,
+    mode: Option<Mode>,
+    model_url: Option<String>,
