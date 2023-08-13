@@ -14,4 +14,7 @@ struct OptionalConfig {
 }
 
 /// The configuration type.
-#[derive(Serialize,
+#[derive(Serialize, Deserialize, Clone, Debug)]
+pub struct Config {
+    pub openai_endpoint: String,
+    pub mode: Mod
