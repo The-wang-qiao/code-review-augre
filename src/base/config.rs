@@ -21,4 +21,9 @@ pub struct Config {
     pub data_path: String,
 
     pub cria_port: Option<u16>,
-    pub openai_key: 
+    pub openai_key: Option<String>,
+    pub model_url: Option<String>,
+    pub model_path: Option<String>,
+}
+
+impl 
