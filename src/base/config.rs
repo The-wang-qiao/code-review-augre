@@ -26,4 +26,5 @@ pub struct Config {
     pub model_path: Option<String>,
 }
 
-impl 
+impl Config {
+    /// Initializes a new [`Config`] object from the specified configurati
