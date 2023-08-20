@@ -27,4 +27,6 @@ pub struct Config {
 }
 
 impl Config {
-    /// Initializes a new [`Config`] object from the specified configurati
+    /// Initializes a new [`Config`] object from the specified configuration path.
+    ///
+    /// Alternatively, this method will fallback to environment variables 
