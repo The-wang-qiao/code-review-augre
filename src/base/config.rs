@@ -29,4 +29,6 @@ pub struct Config {
 impl Config {
     /// Initializes a new [`Config`] object from the specified configuration path.
     ///
-    /// Alternatively, this method will fallback to environment variables 
+    /// Alternatively, this method will fallback to environment variables with the
+    /// prefix `RTZ` (e.g., `RTZ_BIND_ADDRESS`).
+    pub fn new(data_path: &str, mode:
