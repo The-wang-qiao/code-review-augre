@@ -36,4 +36,6 @@ impl Config {
             .add_source(File::with_name(&format!("{}/config.toml", data_path)).required(false))
             .add_source(Environment::with_prefix("augre"));
 
-        let optional_confi
+        let optional_config: OptionalConfig = builder.build()?.try_deserialize()?;
+
+        let mode = optional_confi
