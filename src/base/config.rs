@@ -34,4 +34,6 @@ impl Config {
     pub fn new(data_path: &str, mode: Mode) -> Res<Self> {
         let builder = config::Config::builder()
             .add_source(File::with_name(&format!("{}/config.toml", data_path)).required(false))
-         
+            .add_source(Environment::with_prefix("augre"));
+
+        let optional_confi
