@@ -41,4 +41,5 @@ impl Config {
         let mode = optional_config.mode.unwrap_or(mode);
 
         let openai_endpoint = match mode {
-    
+            Mode::LocalCpu | Mode::LocalGpu => {
+                println!("{} Running in local mode.", 
