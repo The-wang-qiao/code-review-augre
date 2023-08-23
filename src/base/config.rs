@@ -38,4 +38,7 @@ impl Config {
 
         let optional_config: OptionalConfig = builder.build()?.try_deserialize()?;
 
-        let mode = optional_confi
+        let mode = optional_config.mode.unwrap_or(mode);
+
+        let openai_endpoint = match mode {
+    
