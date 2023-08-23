@@ -31,4 +31,6 @@ impl Config {
     ///
     /// Alternatively, this method will fallback to environment variables with the
     /// prefix `RTZ` (e.g., `RTZ_BIND_ADDRESS`).
-    pub fn new(data_path: &str, mode:
+    pub fn new(data_path: &str, mode: Mode) -> Res<Self> {
+        let builder = config::Config::builder()
+            .add_s
