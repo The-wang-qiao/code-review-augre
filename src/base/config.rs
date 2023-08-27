@@ -51,4 +51,6 @@ impl Config {
             },
         };
 
-        let model_path = optional_config.model_url.as_ref().map(|u
+        let model_path = optional_config.model_url.as_ref().map(|url| {
+            let file_name = url.split('/').last().unwrap();
+            format!("{
