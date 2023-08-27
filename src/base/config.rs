@@ -46,4 +46,6 @@ impl Config {
                 "http://localhost:3000".to_string()
             },
             Mode::OpenAi => {
-                println!("{} Running in OpenAI mode.", yansi::Paint:
+                println!("{} Running in OpenAI mode.", yansi::Paint::green("✅"));
+                "https://api.openai.com".to_string()
+          
