@@ -48,4 +48,7 @@ impl Config {
             Mode::OpenAi => {
                 println!("{} Running in OpenAI mode.", yansi::Paint::green("✅"));
                 "https://api.openai.com".to_string()
-          
+            },
+        };
+
+        let model_path = optional_config.model_url.as_ref().map(|u
