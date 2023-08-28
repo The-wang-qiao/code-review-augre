@@ -57,4 +57,5 @@ impl Config {
         });
 
         let config = Config {
-         
+            openai_endpoint,
+            openai_key: optional_config.open
