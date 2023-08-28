@@ -58,4 +58,7 @@ impl Config {
 
         let config = Config {
             openai_endpoint,
-            openai_key: optional_config.open
+            openai_key: optional_config.openai_key,
+            mode,
+            data_path: data_path.to_string(),
+            m
