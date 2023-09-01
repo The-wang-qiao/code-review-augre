@@ -61,4 +61,6 @@ impl Config {
             openai_key: optional_config.openai_key,
             mode,
             data_path: data_path.to_string(),
-            m
+            model_url: optional_config.model_url,
+            cria_port: optional_config.cria_port,
+    
