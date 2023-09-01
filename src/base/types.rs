@@ -11,4 +11,9 @@ pub static TAB: &str = "  ";
 
 // Error helpers.
 
-pub type Res<T> = Result<T, anyhow::
+pub type Res<T> = Result<T, anyhow::Error>;
+pub type Void = Res<()>;
+
+// Mode helpers.
+
+#[derive(Debug, Clone, Copy, Default, S
