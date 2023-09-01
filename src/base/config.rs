@@ -63,4 +63,9 @@ impl Config {
             data_path: data_path.to_string(),
             model_url: optional_config.model_url,
             cria_port: optional_config.cria_port,
-    
+            model_path
+        };
+
+        Ok(config)
+    }
+}
