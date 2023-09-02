@@ -20,3 +20,9 @@ pub type Void = Res<()>;
 pub enum Mode {
     LocalCpu,
     LocalGpu,
+    #[default]
+    OpenAi
+}
+
+impl FromStr for Mode {
+    type Err = anyhow::Error
