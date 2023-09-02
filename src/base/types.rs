@@ -16,4 +16,7 @@ pub type Void = Res<()>;
 
 // Mode helpers.
 
-#[derive(Debug, Clone, Copy, Default, S
+#[derive(Debug, Clone, Copy, Default, Serialize, Deserialize, PartialEq, Eq)]
+pub enum Mode {
+    LocalCpu,
+    LocalGpu,
