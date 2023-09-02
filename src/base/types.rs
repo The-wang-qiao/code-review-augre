@@ -25,4 +25,7 @@ pub enum Mode {
 }
 
 impl FromStr for Mode {
-    type Err = anyhow::Error
+    type Err = anyhow::Error;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        match s.to_asc
