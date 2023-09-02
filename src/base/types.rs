@@ -28,4 +28,5 @@ impl FromStr for Mode {
     type Err = anyhow::Error;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
-        match s.to_asc
+        match s.to_ascii_lowercase().as_str() {
+            "localcpu" => Ok(Mode::LocalCpu),
