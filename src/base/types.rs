@@ -31,4 +31,6 @@ impl FromStr for Mode {
         match s.to_ascii_lowercase().as_str() {
             "localcpu" => Ok(Mode::LocalCpu),
             "localgpu" => Ok(Mode::LocalGpu),
-            "openai" => Ok(Mode::Op
+            "openai" => Ok(Mode::OpenAi),
+            _ => Err(anyhow::Error::msg("Invalid mode specified.")),
+      
