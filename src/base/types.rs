@@ -30,3 +30,5 @@ impl FromStr for Mode {
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         match s.to_ascii_lowercase().as_str() {
             "localcpu" => Ok(Mode::LocalCpu),
+            "localgpu" => Ok(Mode::LocalGpu),
+            "openai" => Ok(Mode::Op
