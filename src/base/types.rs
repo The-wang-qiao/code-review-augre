@@ -33,4 +33,12 @@ impl FromStr for Mode {
             "localgpu" => Ok(Mode::LocalGpu),
             "openai" => Ok(Mode::OpenAi),
             _ => Err(anyhow::Error::msg("Invalid mode specified.")),
-      
+        }
+    }
+}
+
+impl Mode {
+    pub fn is_openai(&self) -> bool {
+        self == &Mode::OpenAi
+    }
+
