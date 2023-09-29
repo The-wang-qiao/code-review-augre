@@ -42,3 +42,5 @@ impl Mode {
         self == &Mode::OpenAi
     }
 
+    pub fn is_local(&self) -> bool {
+        self == &Mode::LocalCpu || self == &Mode::Lo
