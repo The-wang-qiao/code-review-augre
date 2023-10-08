@@ -47,4 +47,8 @@ impl Mode {
     }
 
     pub fn is_local_gpu(&self) -> bool {
-        self
+        self == &Mode::LocalGpu
+    }
+
+    pub fn is_local_cpu(&self) -> bool {
+        self == 
