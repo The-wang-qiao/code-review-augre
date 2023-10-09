@@ -65,3 +65,9 @@ pub trait IsEnsurable {
     async fn is_present(&self) -> Result<bool>;
     async fn make_present(&self) -> Result<()>;
 }
+
+pub trait IsRemovable {
+    async fn make_not_present(&self) -> Result<()>;
+}
+
+// "Public"
