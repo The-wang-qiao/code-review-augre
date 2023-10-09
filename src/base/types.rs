@@ -57,4 +57,9 @@ impl Mode {
 
 // Traits for various internal functionality.
 
-pu
+pub trait HasName {
+    fn name(&self) -> &'static str;
+}
+
+pub trait IsEnsurable {
+    async fn is_p
