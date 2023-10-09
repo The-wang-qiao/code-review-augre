@@ -73,4 +73,7 @@ pub trait IsRemovable {
 // "Public" Entity definitions (performs passthrough to helper functions).
 
 pub trait EnsurableEntity {
-   
+    async fn ensure(&self, confirm: bool) -> Result<()>;
+}
+
+impl<T> EnsurableEntity f
