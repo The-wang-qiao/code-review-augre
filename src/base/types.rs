@@ -70,4 +70,7 @@ pub trait IsRemovable {
     async fn make_not_present(&self) -> Result<()>;
 }
 
-// "Public"
+// "Public" Entity definitions (performs passthrough to helper functions).
+
+pub trait EnsurableEntity {
+   
