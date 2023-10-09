@@ -76,4 +76,7 @@ pub trait EnsurableEntity {
     async fn ensure(&self, confirm: bool) -> Result<()>;
 }
 
-impl<T> EnsurableEntity f
+impl<T> EnsurableEntity for T
+    where T: HasName + IsEnsurable + Send + Sync
+{
+    async fn ensure(&self, confir
