@@ -62,4 +62,6 @@ pub trait HasName {
 }
 
 pub trait IsEnsurable {
-    async fn is_p
+    async fn is_present(&self) -> Result<bool>;
+    async fn make_present(&self) -> Result<()>;
+}
