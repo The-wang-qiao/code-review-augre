@@ -51,4 +51,10 @@ impl Mode {
     }
 
     pub fn is_local_cpu(&self) -> bool {
-        self == 
+        self == &Mode::LocalCpu
+    }
+}
+
+// Traits for various internal functionality.
+
+pu
