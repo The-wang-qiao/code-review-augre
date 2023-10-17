@@ -88,4 +88,6 @@ impl<T> EnsurableEntity for T
             return Ok(())
         }
 
-        println!("{}!", Pai
+        println!("{}!", Paint::red("✘"));
+        
+        if confirm && !Confirm::new().with_prompt(format!(
