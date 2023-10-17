@@ -83,4 +83,9 @@ impl<T> EnsurableEntity for T
         let name = self.name();
         print!("Checking if `{}` is present ... ", Paint::blue(name));
 
-        if self.is_present().await?
+        if self.is_present().await? {
+            println!("💯!");
+            return Ok(())
+        }
+
+        println!("{}!", Pai
