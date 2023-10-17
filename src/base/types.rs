@@ -81,4 +81,6 @@ impl<T> EnsurableEntity for T
 {
     async fn ensure(&self, confirm: bool) -> Result<()> {
         let name = self.name();
-        print!("Ch
+        print!("Checking if `{}` is present ... ", Paint::blue(name));
+
+        if self.is_present().await?
