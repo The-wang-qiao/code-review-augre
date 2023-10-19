@@ -90,4 +90,6 @@ impl<T> EnsurableEntity for T
 
         println!("{}!", Paint::red("✘"));
         
-        if confirm && !Confirm::new().with_prompt(format!("{}`{}` is not present: do you want me to make it so?", TAB, Paint::blue(name))).inter
+        if confirm && !Confirm::new().with_prompt(format!("{}`{}` is not present: do you want me to make it so?", TAB, Paint::blue(name))).interact()? {
+            println!("{}Skipping ...", TAB);
+            return Err(anyhow::
