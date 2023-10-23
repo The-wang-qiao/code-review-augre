@@ -95,4 +95,8 @@ impl<T> EnsurableEntity for T
             return Err(anyhow::anyhow!("User skipped required operation."));
         }
         
-        println!("{}Ensuring presence of `{}` ({}) ...", TAB, Paint::blue(name), Paint::yellow("you may need to in
+        println!("{}Ensuring presence of `{}` ({}) ...", TAB, Paint::blue(name), Paint::yellow("you may need to interact with the execution"));
+
+        self.make_present().await?;
+        
+        printl
