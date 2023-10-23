@@ -104,3 +104,6 @@ impl<T> EnsurableEntity for T
         Ok(())
     }
 }
+
+pub trait RemovableEntity {
+    async fn remove(&self, confirm: bool
