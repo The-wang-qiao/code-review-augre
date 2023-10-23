@@ -95,4 +95,4 @@ impl<T> EnsurableEntity for T
             return Err(anyhow::anyhow!("User skipped required operation."));
         }
         
-        println!("{}Ensuring presenc
+        println!("{}Ensuring presence of `{}` ({}) ...", TAB, Paint::blue(name), Paint::yellow("you may need to in
