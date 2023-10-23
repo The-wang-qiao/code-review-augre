@@ -99,4 +99,8 @@ impl<T> EnsurableEntity for T
 
         self.make_present().await?;
         
-        printl
+        println!("{}Successfully ensured `{}`.", TAB, Paint::blue(name));
+        
+        Ok(())
+    }
+}
