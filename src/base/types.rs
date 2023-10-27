@@ -110,4 +110,7 @@ pub trait RemovableEntity {
 }
 
 impl<T> RemovableEntity for T
-    where T: HasName + IsEnsurable + 
+    where T: HasName + IsEnsurable + IsRemovable + Send + Sync
+{
+    async fn remove(&self, confirm: bool) -> Result<()> {
+        let 
