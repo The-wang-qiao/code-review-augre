@@ -116,4 +116,6 @@ impl<T> RemovableEntity for T
         let name = self.name();
 
         if !self.is_present().await? {
-            println!("{} `{}` is
+            println!("{} `{}` is not running!", TAB, Paint::blue(name));
+            return Ok(())
+   
