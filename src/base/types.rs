@@ -113,4 +113,7 @@ impl<T> RemovableEntity for T
     where T: HasName + IsEnsurable + IsRemovable + Send + Sync
 {
     async fn remove(&self, confirm: bool) -> Result<()> {
-        let 
+        let name = self.name();
+
+        if !self.is_present().await? {
+            println!("{} `{}` is
