@@ -118,4 +118,6 @@ impl<T> RemovableEntity for T
         if !self.is_present().await? {
             println!("{} `{}` is not running!", TAB, Paint::blue(name));
             return Ok(())
-   
+        }
+
+        if confirm && !Confirm::new().with_prompt(format!("{}`{}` is
