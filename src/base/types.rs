@@ -106,4 +106,8 @@ impl<T> EnsurableEntity for T
 }
 
 pub trait RemovableEntity {
-    async fn remove(&self, confirm: bool
+    async fn remove(&self, confirm: bool) -> Result<()>;
+}
+
+impl<T> RemovableEntity for T
+    where T: HasName + IsEnsurable + 
