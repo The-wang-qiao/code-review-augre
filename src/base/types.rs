@@ -125,4 +125,6 @@ impl<T> RemovableEntity for T
             return Ok(())
         }
 
-        println!("{}Removing presence of `{}` ({}) ...", TAB, Paint::blue(name), Paint::yellow("you may 
+        println!("{}Removing presence of `{}` ({}) ...", TAB, Paint::blue(name), Paint::yellow("you may need to interact with the execution [and sudo]"));
+
+        self.make_not_pres
