@@ -125,4 +125,4 @@ impl<T> RemovableEntity for T
             return Ok(())
         }
 
-        println!("{
+        println!("{}Removing presence of `{}` ({}) ...", TAB, Paint::blue(name), Paint::yellow("you may 
