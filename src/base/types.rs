@@ -121,4 +121,8 @@ impl<T> RemovableEntity for T
         }
 
         if confirm && !Confirm::new().with_prompt(format!("{}`{}` is present: do you want me to remove it?", TAB, Paint::blue(name))).interact()? {
-            println!("{}Sk
+            println!("{}Skipping ...", TAB);
+            return Ok(())
+        }
+
+        println!("{
