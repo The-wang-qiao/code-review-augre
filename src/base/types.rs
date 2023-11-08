@@ -149,4 +149,5 @@ impl MapStatus for Result<ExitStatus, std::io::Error> {
             .map(|s| s.code())
             .map_err(|e| e.into())
             .and_then(|s| match s {
-      
+                None | Some(0) => Ok(()),
+                Some(c) => Err(anyhow::Error:
