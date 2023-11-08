@@ -151,4 +151,10 @@ impl MapStatus for Result<ExitStatus, std::io::Error> {
             .and_then(|s| match s {
                 None | Some(0) => Ok(()),
                 Some(c) => Err(anyhow::Error::msg(format!("The exit code of the operation was not successful ({}).", c))),
-     
+            })
+    }
+}
+
+// Other helper methods.
+
+pub(crate) async fn is_binary_present<T>(
