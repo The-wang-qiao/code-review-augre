@@ -157,4 +157,7 @@ impl MapStatus for Result<ExitStatus, std::io::Error> {
 
 // Other helper methods.
 
-pub(crate) async fn is_binary_present<T>(
+pub(crate) async fn is_binary_present<T>(s: &T) -> Result<bool>
+    where T: HasName
+{
+    let cmd = if cfg!(target_os = "wi
