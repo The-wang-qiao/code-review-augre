@@ -146,4 +146,7 @@ impl MapStatus for Result<ExitStatus, std::io::Error> {
 
 
         self
-            .map(|s| s.
+            .map(|s| s.code())
+            .map_err(|e| e.into())
+            .and_then(|s| match s {
+      
