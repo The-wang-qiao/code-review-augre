@@ -141,4 +141,9 @@ pub trait MapStatus {
     fn map_status(self) -> Result<()>;
 }
 
-impl MapStatus for Result<ExitStatus, std::io:
+impl MapStatus for Result<ExitStatus, std::io::Error> {
+    fn map_status(self) -> Result<()> {
+
+
+        self
+            .map(|s| s.
