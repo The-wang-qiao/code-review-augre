@@ -138,4 +138,7 @@ impl<T> RemovableEntity for T
 // Exit status helper trait.
 
 pub trait MapStatus {
-    fn 
+    fn map_status(self) -> Result<()>;
+}
+
+impl MapStatus for Result<ExitStatus, std::io:
