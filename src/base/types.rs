@@ -129,4 +129,13 @@ impl<T> RemovableEntity for T
 
         self.make_not_present().await?;
         
-        println!("{}Successfully removed `{}`.", TAB, Paint::blue(name))
+        println!("{}Successfully removed `{}`.", TAB, Paint::blue(name));
+        
+        Ok(())
+    }
+}
+
+// Exit status helper trait.
+
+pub trait MapStatus {
+    fn 
