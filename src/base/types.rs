@@ -150,4 +150,5 @@ impl MapStatus for Result<ExitStatus, std::io::Error> {
             .map_err(|e| e.into())
             .and_then(|s| match s {
                 None | Some(0) => Ok(()),
-                Some(c) => Err(anyhow::Error:
+                Some(c) => Err(anyhow::Error::msg(format!("The exit code of the operation was not successful ({}).", c))),
+     
