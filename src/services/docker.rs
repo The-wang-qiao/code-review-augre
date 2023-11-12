@@ -35,3 +35,28 @@ impl IsEnsurable for Docker {
             .status().await
             .map_status()
             .context("Unable to curl the docker convenience script.")?;
+
+        Command::new("sh")
+            .arg("get-docker.sh")
+            .status().await
+            .map_status()
+            .context("Unable to run the docker install script (might need sudo).")?;
+
+        // Ignore failure: might be in container.
+        Command::new("usermod")
+            .arg("-aG")
+            .arg("docker")
+            .arg("$USER")
+            .status().await
+            .map_status().unwrap_or(());
+                
+        Command::new("rm")
+            .arg("-f")
+            .arg("get-docker.sh")
+            .status().await
+            .map_status()
+            .context("Failed to delete the docker install script.")?;
+
+        Ok(())
+    }
+}
