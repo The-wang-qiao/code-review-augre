@@ -57,3 +57,79 @@ impl IsEnsurable for Cria {
 
         let compose = compose_template
             .replace("{{port}}", &self.resolve_port()?.to_string())
+            .replace("{{model}}", &path);
+
+        let compose_path = format!("{}/docker-compose.yml", self.data_path);
+
+        println!("{}Creating `{}` using model path `{}` ... ", TAB, compose_path, path);
+
+        std::fs::write(&compose_path, &compose)?;
+
+        Command::new("docker-compose")
+            .arg("-p")
+            .arg("cria")
+            .arg("-f")
+            .arg(compose_path)
+            .arg("up")
+            .arg("-d")
+            .status().await
+            .map_status()
+            .context("Unable to run `docker-compose`.")?;
+
+        for _ in 0..10 {
+            if self.is_present().await? {
+                return Ok(());
+            }
+
+            tokio::time::sleep(Duration::from_secs(10)).await;
+            println!("{}Waiting for Cria to start ... ", TAB)
+        }
+
+        Err(anyhow::Error::msg("Unable to start the Cria server (timed out)."))
+    }
+}
+
+impl IsRemovable for Cria {
+    async fn make_not_present(&self) -> Res<()> {
+        let compose_path = format!("{}/docker-compose.yml", self.data_path);
+
+        println!("{}Removing `{}` ... ", TAB, compose_path);
+
+        Command::new("docker-compose")
+            .arg("-p")
+            .arg("cria")
+            .arg("-f")
+            .arg(compose_path)
+            .arg("down")
+            .status().await
+            .map_status()
+            .unwrap();
+            //.context("Unable to run `docker-compose`.")?;
+
+        Ok(())
+    }
+}
+
+impl Cria {
+    pub fn new(model_path: &Option<String>, data_path: &str, mode: Mode, port: Option<u16>) -> Self {
+        Self {
+            model_path: model_path.clone(),
+            data_path: data_path.to_string(),
+            mode,
+            port
+        }
+    }
+
+    fn resolve_port(&self) -> Res<u16> {
+        self.port.ok_or_else(|| anyhow::Error::msg("No cria port provided.  Please provide a `cria_port` config value."))
+    }
+
+    fn resolve_model_path(&self) -> Res<&str> {
+        self.model_path.as_deref().ok_or_else(|| anyhow::Error::msg("No model path provided.  Please provide a `model_path` config value, or use the OpenAI mode."))
+    }
+}
+
+// Statics.
+
+static GPU_COMPOSE: &str = r#"
+version: "3.8"
