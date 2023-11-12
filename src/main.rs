@@ -42,3 +42,84 @@ struct Args {
 
     #[command(subcommand)]
     command: Option<Command>,
+}
+
+#[derive(Subcommand, Debug)]
+enum Command {
+    /// Performs a code review of the current `git diff HEAD^`.
+    Review,
+
+    /// Gives a response to the specified prompt.
+    Ask {
+        /// The prompt to respond to.
+        prompt: String,
+    },
+
+    /// Stop all of the background services.
+    Stop,
+}
+
+// Entrypoint.
+
+#[tokio::main]
+async fn main() {
+    let args = Args::parse();
+
+    if let Err(err) = start(args).await {
+        eprintln!("{}: {}", Paint::red("ERROR"), err);
+        std::process::exit(1);
+    }
+}
+
+async fn start(args: Args) -> Void {
+    let config = base::config::Config::new(&args.data_path, args.mode)?;
+    let confirm = !args.skip_confirm;
+
+    match args.command {
+        Some(Command::Review) => review(&config, confirm).await?,
+        Some(Command::Ask { prompt }) => ask(&config, confirm, &prompt).await?,
+        Some(Command::Stop) => stop(&config, confirm).await?,
+        None => return Err(anyhow::anyhow!("No command specified.")),
+    }
+
+    Ok(())
+}
+
+async fn review(config: &Config, confirm: bool) -> Void {
+    println!();
+
+    maybe_prepare_local(config, confirm).await?;
+
+    let git = Git::default();
+    let gpt = Gpt::new(&config.openai_endpoint, &config.openai_key, config.mode);
+
+    git.ensure(confirm).await?;
+    gpt.ensure(confirm).await?;
+
+    println!();
+
+    print!("Getting diff ...");
+    let diff = Git::diff().await?;
+    println!(" {}", Paint::green("✔️"));
+
+    println!("Getting review ...");
+    let response = gpt.review(&diff).await?.trim().to_string();
+    println!("{}", Paint::green("✔️"));
+
+    println!();
+
+    let skin = MadSkin::default();
+    skin.print_text(&response);
+
+    Ok(())
+}
+
+async fn ask(config: &Config, confirm: bool, prompt: &str) -> Void {
+    println!();
+
+    maybe_prepare_local(config, confirm).await?;
+
+    let gpt = Gpt::new(&config.openai_endpoint, &config.openai_key, config.mode);
+    gpt.ensure(confirm).await?;
+
+    println!();
