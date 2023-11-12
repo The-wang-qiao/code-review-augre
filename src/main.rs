@@ -123,3 +123,37 @@ async fn ask(config: &Config, confirm: bool, prompt: &str) -> Void {
     gpt.ensure(confirm).await?;
 
     println!();
+
+    println!("Getting response ...");
+    let response = gpt.ask(prompt).await?.trim().to_string();
+    println!("{}", Paint::green("✔️"));
+
+    println!();
+
+    let skin = MadSkin::default();
+    skin.print_text(&response);
+
+    Ok(())
+}
+
+async fn stop(config: &Config, confirm: bool) -> Void {
+    let cria = Cria::new(&config.model_path, &config.data_path, config.mode, config.cria_port);
+
+    cria.remove(confirm).await?;
+
+    Ok(())
+}
+
+async fn maybe_prepare_local(config: &Config, confirm: bool) -> Void {
+    if config.mode == Mode::LocalCpu || config.mode == Mode::LocalGpu {
+        let docker = Docker::default();
+        let model = Model::new(&config.model_path, &config.model_url);
+        let cria = Cria::new(&config.model_path, &config.data_path, config.mode, config.cria_port);
+
+        docker.ensure(confirm).await?;
+        model.ensure(confirm).await?;
+        cria.ensure(confirm).await?;
+    }
+
+    Ok(())
+}
