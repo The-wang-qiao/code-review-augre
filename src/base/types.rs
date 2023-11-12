@@ -163,4 +163,7 @@ pub(crate) async fn is_binary_present<T>(s: &T) -> Result<bool>
     let cmd = if cfg!(target_os = "windows") { "where" } else { "which" };
 
     Ok(Command::new(cmd)
-        .arg(s.name
+        .arg(s.name())
+        .stdout(Stdio::null())
+        .stderr(Stdio::null())
+        .stdin(Stdio:
