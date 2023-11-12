@@ -133,3 +133,53 @@ impl Cria {
 
 static GPU_COMPOSE: &str = r#"
 version: "3.8"
+
+services:
+  cria:
+    image: twitchax/cria-gpu:2023.09.20
+    ports:
+      - {{port}}:{{port}}
+    volumes:
+      - {{model}}:/app/model.bin
+    environment:
+      - CRIA_SERVICE_NAME=cria
+      - CRIA_HOST=0.0.0.0
+      - CRIA_PORT={{port}}
+      - CRIA_ZIPKIN_ENDPOINT=http://zipkin-server:9411/api/v2/spans
+      - CRIA_CONTEXT_SIZE=65536
+      - CRIA_USE_GPU=true
+      - CRIA_GPU_LAYERS=32
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+  zipkin-server:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+"#;
+
+static CPU_COMPOSE: &str = r#"
+version: "3.8"
+
+services:
+  cria:
+    image: twitchax/cria-gpu:2023.09.20
+    ports:
+      - {{port}}:{{port}}
+    volumes:
+      - {{model}}:/app/model.bin
+    environment:
+      - CRIA_SERVICE_NAME=cria
+      - CRIA_HOST=0.0.0.0
+      - CRIA_PORT={{port}}
+      - CRIA_ZIPKIN_ENDPOINT=http://zipkin-server:9411/api/v2/spans
+      - CRIA_CONTEXT_SIZE=65536
+  zipkin-server:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+"#;
