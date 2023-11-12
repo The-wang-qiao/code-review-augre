@@ -166,4 +166,6 @@ pub(crate) async fn is_binary_present<T>(s: &T) -> Result<bool>
         .arg(s.name())
         .stdout(Stdio::null())
         .stderr(Stdio::null())
-        .stdin(Stdio:
+        .stdin(Stdio::null())
+        .status().await?.success())
+}
