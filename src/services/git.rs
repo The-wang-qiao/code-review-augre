@@ -16,4 +16,8 @@ impl HasName for Git {
 }
 
 impl IsEnsurable for Git {
-    async fn
+    async fn is_present(&self) -> Res<bool> {
+        is_binary_present(self).await
+    }
+
+    async
