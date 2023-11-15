@@ -10,4 +10,10 @@ static NAME: &str = "git";
 pub struct Git {}
 
 impl HasName for Git {
-    fn nam
+    fn name(&self) -> &'static str {
+        NAME
+    }
+}
+
+impl IsEnsurable for Git {
+    async fn
