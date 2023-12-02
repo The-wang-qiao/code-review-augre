@@ -22,4 +22,4 @@ impl IsEnsurable for Git {
 
     async fn make_present(&self) -> Void {
         if cfg!(target_os = "windows") {
-       
+            println!("{}{}: Please install `{}` manually on Windows.", TAB, Paint::
