@@ -20,4 +20,6 @@ impl IsEnsurable for Git {
         is_binary_present(self).await
     }
 
-    async
+    async fn make_present(&self) -> Void {
+        if cfg!(target_os = "windows") {
+       
