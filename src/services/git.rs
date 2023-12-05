@@ -23,4 +23,8 @@ impl IsEnsurable for Git {
     async fn make_present(&self) -> Void {
         if cfg!(target_os = "windows") {
             println!("{}{}: Please install `{}` manually on Windows.", TAB, Paint::red("✘"), Paint::blue(NAME));
-            return Err(anyhow::anyhow!("User skipped req
+            return Err(anyhow::anyhow!("User skipped required operation."));
+        }
+
+        Command::new("apt-get")
+            .arg("u
