@@ -30,4 +30,8 @@ impl IsEnsurable for Git {
             .arg("update")
             .status().await
             .map_status()
-            .context("Unable to update apt-ge
+            .context("Unable to update apt-get.")?;
+    
+        Command::new("apt-get")
+            .arg("-y")
+            .a
