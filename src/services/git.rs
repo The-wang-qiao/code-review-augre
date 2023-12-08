@@ -27,4 +27,7 @@ impl IsEnsurable for Git {
         }
 
         Command::new("apt-get")
-            .arg("u
+            .arg("update")
+            .status().await
+            .map_status()
+            .context("Unable to update apt-ge
