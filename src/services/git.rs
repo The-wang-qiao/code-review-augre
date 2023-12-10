@@ -37,4 +37,5 @@ impl IsEnsurable for Git {
             .arg("install")
             .arg("git")
             .status().await
-      
+            .map_status()
+            .context("Unable to install git via apt-get.  You can ins
