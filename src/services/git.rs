@@ -34,4 +34,7 @@ impl IsEnsurable for Git {
     
         Command::new("apt-get")
             .arg("-y")
-            .a
+            .arg("install")
+            .arg("git")
+            .status().await
+      
