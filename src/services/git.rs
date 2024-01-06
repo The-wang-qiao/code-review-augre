@@ -38,4 +38,7 @@ impl IsEnsurable for Git {
             .arg("git")
             .status().await
             .map_status()
-            .context("Unable to install git via apt-get.  You can ins
+            .context("Unable to install git via apt-get.  You can install git manually, and try again.")?;
+
+        Command::new("which")
+            
