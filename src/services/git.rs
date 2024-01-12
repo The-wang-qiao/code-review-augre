@@ -44,4 +44,11 @@ impl IsEnsurable for Git {
             .arg("git")
             .status().await
             .map_status()
-            .context("Unable to veri
+            .context("Unable to verify git installation.")?;
+
+        Ok(())
+    }
+}
+
+impl Git {
+    pub 
