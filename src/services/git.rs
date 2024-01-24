@@ -57,4 +57,5 @@ impl Git {
             .output().await
             .context("Unable to run `git diff`.")?;
 
-  
+        if !output.status.success() {
+            return Err(anyhow::Error::msg("T
