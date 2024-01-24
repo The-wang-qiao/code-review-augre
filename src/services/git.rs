@@ -53,4 +53,8 @@ impl IsEnsurable for Git {
 impl Git {
     pub async fn diff() -> Res<String> {
         let output = Command::new("git")
-            .arg("di
+            .arg("diff")
+            .output().await
+            .context("Unable to run `git diff`.")?;
+
+  
