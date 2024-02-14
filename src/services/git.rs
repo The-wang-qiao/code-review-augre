@@ -61,4 +61,8 @@ impl Git {
             return Err(anyhow::Error::msg("The exit code of the `git diff` operation was not successful."));
         }
 
-        let stdout = String::from_u
+        let stdout = String::from_utf8(output.stdout)?;
+
+        Ok(stdout)
+    }
+}
