@@ -58,4 +58,7 @@ impl Git {
             .context("Unable to run `git diff`.")?;
 
         if !output.status.success() {
-            return Err(anyhow::Error::msg("T
+            return Err(anyhow::Error::msg("The exit code of the `git diff` operation was not successful."));
+        }
+
+        let stdout = String::from_u
