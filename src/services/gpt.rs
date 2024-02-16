@@ -19,3 +19,6 @@ impl HasName for Gpt {
     }
 }
 
+impl IsEnsurable for Gpt {
+    async fn is_present(&self) -> Res<bool> {
+        le
