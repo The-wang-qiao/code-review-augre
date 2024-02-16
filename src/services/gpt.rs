@@ -12,3 +12,10 @@ pub struct Gpt {
     key: Option<String>,
     mode: Mode,
 }
+
+impl HasName for Gpt {
+    fn name(&self) -> &'static str {
+        NAME
+    }
+}
+
