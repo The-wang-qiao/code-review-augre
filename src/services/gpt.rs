@@ -21,4 +21,9 @@ impl HasName for Gpt {
 
 impl IsEnsurable for Gpt {
     async fn is_present(&self) -> Res<bool> {
-        le
+        let _ = self.resolve_key()?;
+        
+        Ok(true)
+    }
+
+    async fn make_present(&self) 
