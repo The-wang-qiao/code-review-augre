@@ -5,4 +5,10 @@ use url::Url;
 
 use crate::base::types::{HasName, IsEnsurable, Mode, Res, Void};
 
-static NAME: &
+static NAME: &str = "gpt_sdk";
+
+pub struct Gpt {
+    url: String,
+    key: Option<String>,
+    mode: Mode,
+}
