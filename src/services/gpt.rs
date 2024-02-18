@@ -26,4 +26,5 @@ impl IsEnsurable for Gpt {
         Ok(true)
     }
 
-    async fn make_present(&self) 
+    async fn make_present(&self) -> Void {
+        Err(anyhow::Error::msg("Cannot perform `make_present`: this shoul
