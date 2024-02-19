@@ -32,4 +32,7 @@ impl IsEnsurable for Gpt {
 }
 
 impl Gpt {
-    pub async fn review(&self, diff: &str) -
+    pub async fn review(&self, diff: &str) -> Res<String> {
+        let key = self.resolve_key()?;
+
+        let url = format!("{}/v1/chat/co
