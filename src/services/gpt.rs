@@ -43,4 +43,6 @@ impl Gpt {
             ..Default::default()
         };
 
-        let
+        let client = ChatGPT::new_with_config(key, config)?;
+
+        let message = REVIEW_PROMPT.replace("{{di
