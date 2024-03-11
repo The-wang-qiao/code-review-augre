@@ -52,4 +52,7 @@ impl Gpt {
         Ok(response.message_choices[0].message.content.clone())
     }
 
-    pub async fn ask(&self, prompt: 
+    pub async fn ask(&self, prompt: &str) -> Res<String> {
+        let key = self.resolve_key()?;
+
+        let url = format!("
