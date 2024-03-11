@@ -45,4 +45,8 @@ impl Gpt {
 
         let client = ChatGPT::new_with_config(key, config)?;
 
-        let message = REVIEW_PROMPT.replace("{{di
+        let message = REVIEW_PROMPT.replace("{{diff}}", diff);
+
+        let response = client.send_message(message).await?;
+
+       
