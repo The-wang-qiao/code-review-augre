@@ -49,4 +49,7 @@ impl Gpt {
 
         let response = client.send_message(message).await?;
 
-       
+        Ok(response.message_choices[0].message.content.clone())
+    }
+
+    pub async fn ask(&self, prompt: 
