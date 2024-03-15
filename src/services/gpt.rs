@@ -55,4 +55,6 @@ impl Gpt {
     pub async fn ask(&self, prompt: &str) -> Res<String> {
         let key = self.resolve_key()?;
 
-        let url = format!("
+        let url = format!("{}/v1/chat/completions", self.url);
+        let config = ModelConfiguration {
+            engine: C
