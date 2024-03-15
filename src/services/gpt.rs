@@ -57,4 +57,6 @@ impl Gpt {
 
         let url = format!("{}/v1/chat/completions", self.url);
         let config = ModelConfiguration {
-            engine: C
+            engine: ChatGPTEngine::Gpt4,
+            api_url: Url::from_str(&url)?,
+            timeout:
