@@ -63,4 +63,6 @@ impl Gpt {
             ..Default::default()
         };
 
-        let c
+        let client = ChatGPT::new_with_config(key, config)?;
+
+        let response = client.send_message(prompt.to_st
