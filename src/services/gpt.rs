@@ -59,4 +59,8 @@ impl Gpt {
         let config = ModelConfiguration {
             engine: ChatGPTEngine::Gpt4,
             api_url: Url::from_str(&url)?,
-            timeout:
+            timeout: Duration::from_secs(300),
+            ..Default::default()
+        };
+
+        let c
