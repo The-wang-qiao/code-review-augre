@@ -65,4 +65,10 @@ impl Gpt {
 
         let client = ChatGPT::new_with_config(key, config)?;
 
-        let response = client.send_message(prompt.to_st
+        let response = client.send_message(prompt.to_string()).await?;
+
+        Ok(response.message_choices[0].message.content.clone())
+    }
+}
+
+imp
