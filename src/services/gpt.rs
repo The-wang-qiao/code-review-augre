@@ -71,4 +71,5 @@ impl Gpt {
     }
 }
 
-imp
+impl Gpt {
+    pub fn new(url: &str, key: &Option<String>, mode: Mode) -
