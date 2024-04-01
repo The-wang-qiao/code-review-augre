@@ -81,4 +81,5 @@ impl Gpt {
     }
 
     fn resolve_key(&self) -> Res<&str> {
-        let key = if sel
+        let key = if self.mode == Mode::OpenAi {
+            self.key.as_ref().ok_or(anyhow::Error::msg
