@@ -72,4 +72,8 @@ impl Gpt {
 }
 
 impl Gpt {
-    pub fn new(url: &str, key: &Option<String>, mode: Mode) -
+    pub fn new(url: &str, key: &Option<String>, mode: Mode) -> Self {
+        Self {
+            url: url.to_string(),
+            key: key.clone(),
+  
