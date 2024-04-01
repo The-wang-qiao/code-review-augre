@@ -91,4 +91,7 @@ impl Gpt {
     }
 }
 
-// S
+// Statics.
+
+static REVIEW_PROMPT: &str = r#"
+Please perform a code review of the following diff (produ
