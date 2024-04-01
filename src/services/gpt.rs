@@ -82,4 +82,13 @@ impl Gpt {
 
     fn resolve_key(&self) -> Res<&str> {
         let key = if self.mode == Mode::OpenAi {
-            self.key.as_ref().ok_or(anyhow::Error::msg("OpenAI key not provided.  Please set the `openai_key` config value, or us
+            self.key.as_ref().ok_or(anyhow::Error::msg("OpenAI key not provided.  Please set the `openai_key` config value, or use a local mode."))?
+        } else {
+            ""
+        };
+
+        Ok(key)
+    }
+}
+
+// S
