@@ -82,4 +82,4 @@ impl Gpt {
 
     fn resolve_key(&self) -> Res<&str> {
         let key = if self.mode == Mode::OpenAi {
-            self.key.as_ref().ok_or(anyhow::Error::msg
+            self.key.as_ref().ok_or(anyhow::Error::msg("OpenAI key not provided.  Please set the `openai_key` config value, or us
