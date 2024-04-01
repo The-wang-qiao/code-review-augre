@@ -76,4 +76,9 @@ impl Gpt {
         Self {
             url: url.to_string(),
             key: key.clone(),
-  
+            mode,
+        }
+    }
+
+    fn resolve_key(&self) -> Res<&str> {
+        let key = if sel
