@@ -100,4 +100,4 @@ Please perform a code review of the following diff (produced by `git diff` on my
 {{diff}}
 ```
 
-Please
+Please prioritize the response by impact to the code, and please split the suggestions into t
