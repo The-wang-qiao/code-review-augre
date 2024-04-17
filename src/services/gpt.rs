@@ -94,4 +94,10 @@ impl Gpt {
 // Statics.
 
 static REVIEW_PROMPT: &str = r#"
-Please perform a code review of the following diff (produ
+Please perform a code review of the following diff (produced by `git diff` on my code), and provide suggestions for improvement:
+
+```
+{{diff}}
+```
+
+Please
