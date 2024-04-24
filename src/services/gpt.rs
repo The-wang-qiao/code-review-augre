@@ -111,4 +111,12 @@ The format should look like:
 
 ```
 1. Likely runtime bugs:
-- Some suggestion
+- Some suggestion...
+- Another...
+
+2. Likely logic bugs:
+- Suggestion 1
+- Suggestion 2
+- Suggestion 3
+
+3. Likely style bug
