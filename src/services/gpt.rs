@@ -102,4 +102,5 @@ Please perform a code review of the following diff (produced by `git diff` on my
 
 Please prioritize the response by impact to the code, and please split the suggestions into three categories:
 1. Suggestions that pertain to likely runtime bugs or errors.
-2. Suggestions
+2. Suggestions that pertain to likely logic bugs or errors.
+3. Suggestions that pertain to lik
