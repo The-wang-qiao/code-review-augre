@@ -105,4 +105,10 @@ Please prioritize the response by impact to the code, and please split the sugge
 2. Suggestions that pertain to likely logic bugs or errors.
 3. Suggestions that pertain to likely style bugs or errors.
 
-If possible, please also provide a suggested fix to the identified issue.  If you are unable to provide a suggested fix, please provide a reason why
+If possible, please also provide a suggested fix to the identified issue.  If you are unable to provide a suggested fix, please provide a reason why.
+
+The format should look like:
+
+```
+1. Likely runtime bugs:
+- Some suggestion
