@@ -119,4 +119,10 @@ The format should look like:
 - Suggestion 2
 - Suggestion 3
 
-3. Likely style bug
+3. Likely style bugs:
+- Suggestion 1
+- Suggestion 2
+- Suggestion 3
+```
+
+For each relevant code s
