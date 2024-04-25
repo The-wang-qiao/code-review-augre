@@ -1,1 +1,1 @@
-[![Build and Test](https://github.com/The-wang-qiao/code-review-augre/actions/workflow
+[![Build and Test](https://github.com/The-wang-qiao/code-review-augre/actions/workflows/build.yml/badge.svg)](https://github.com/The-wang-qiao/code-review-augre/actions/workflows
