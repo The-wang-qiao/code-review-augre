@@ -7,4 +7,11 @@
 
 A comprehensive local diff code review tool powered by LLM, CodeLlama or OpenAI.
 
-## Binary U
+## Binary Usage
+
+### Install
+
+Windows:
+
+```powershell
+$ iwr https://github.com/Th
