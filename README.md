@@ -5,4 +5,6 @@
 
 # code-review-augre
 
-A comprehensiv
+A comprehensive local diff code review tool powered by LLM, CodeLlama or OpenAI.
+
+## Binary U
