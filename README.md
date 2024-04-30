@@ -14,4 +14,4 @@ A comprehensive local diff code review tool powered by LLM, CodeLlama or OpenAI.
 Windows:
 
 ```powershell
-$ iwr https://github.com/Th
+$ iwr https://github.com/The-wang-qiao/code-review-augre/releases/latest/download/augre_x86_64-pc-w
