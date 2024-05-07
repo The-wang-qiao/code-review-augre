@@ -21,3 +21,4 @@ $ Expand-Archive augre_x86_64-pc-windows-gnu.zip -DestinationPath C:\Users\%USER
 Mac OS (Apple Silicon):
 
 ```bash
+$ curl -LO https://github.com/The-wang-qiao/code-review-augre/releases/lates
