@@ -15,4 +15,9 @@ Windows:
 
 ```powershell
 $ iwr https://github.com/The-wang-qiao/code-review-augre/releases/latest/download/augre_x86_64-pc-windows-gnu.zip
-$ Expand-Archive augre_x86_64-pc-windows-gnu.zip -DestinationPat
+$ Expand-Archive augre_x86_64-pc-windows-gnu.zip -DestinationPath C:\Users\%USERNAME%\AppData\Local\Programs\augre
+```
+
+Mac OS (Apple Silicon):
+
+```bash
