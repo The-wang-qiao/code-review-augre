@@ -23,3 +23,10 @@ Mac OS (Apple Silicon):
 ```bash
 $ curl -LO https://github.com/The-wang-qiao/code-review-augre/releases/latest/download/augre_aarch64-apple-darwin.zip
 $ unzip augre_aarch64-apple-darwin.zip -d /usr/local/bin
+$ chmod a+x /usr/local/bin/augre
+```
+
+Linux:
+
+```bash
+$ curl -LO https://github
