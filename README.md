@@ -31,4 +31,13 @@ Linux:
 ```bash
 $ curl -LO https://github.com/The-wang-qiao/code-review-augre/releases/latest/download/augre_x86_64-unknown-linux-gnu.zip
 $ unzip augre_x86_64-unknown-linux-gnu.zip -d /usr/local/bin
-$ chmod a+x /usr/local/b
+$ chmod a+x /usr/local/bin/augre
+```
+
+Cargo:
+
+```bash
+$ cargo install augre
+```
+
+### Help Docs
