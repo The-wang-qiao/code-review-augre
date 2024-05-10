@@ -29,4 +29,4 @@ $ chmod a+x /usr/local/bin/augre
 Linux:
 
 ```bash
-$ curl -LO https://github
+$ curl -LO https://github.com/The-wang-qiao/code-review-augre/releases/latest/download/augre_x86_64-unknown-linux-gnu.zip
