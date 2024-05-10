@@ -41,3 +41,10 @@ $ cargo install augre
 ```
 
 ### Help Docs
+
+```bash
+$ augre -h
+Usage: augre [OPTIONS] [COMMAND]
+
+Commands:
+  review  Performs a code review
