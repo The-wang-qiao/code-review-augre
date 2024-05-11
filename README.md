@@ -47,4 +47,6 @@ $ augre -h
 Usage: augre [OPTIONS] [COMMAND]
 
 Commands:
-  review  Performs a code review
+  review  Performs a code review of the current `git diff HEAD^`
+  ask     Gives a response to the specified prompt
+  stop    St
