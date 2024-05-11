@@ -49,4 +49,5 @@ Usage: augre [OPTIONS] [COMMAND]
 Commands:
   review  Performs a code review of the current `git diff HEAD^`
   ask     Gives a response to the specified prompt
-  stop    St
+  stop    Stop all of the background services
+  help    Print this message or the help of the given subcommand(s)
