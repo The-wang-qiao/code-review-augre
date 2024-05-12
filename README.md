@@ -51,3 +51,6 @@ Commands:
   ask     Gives a response to the specified prompt
   stop    Stop all of the background services
   help    Print this message or the help of the given subcommand(s)
+
+Options:
+  -d, --data-path <DATA_PATH>  The path to the data directory [default
