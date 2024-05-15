@@ -62,4 +62,8 @@ Options:
 
 ## Example Config
 
-Save config as `.augre/config.toml` in the 
+Save config as `.augre/config.toml` in the directory that needs to be reviewed
+
+```toml
+mode = "LocalGpu"
+model_ur
