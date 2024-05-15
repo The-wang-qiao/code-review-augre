@@ -57,4 +57,9 @@ Options:
   -m, --mode <MODE>            The default operation mode [default: openai]
   -y, --yes                    Whether to skip the confirmation prompt
   -h, --help                   Print help
-  -V, --version                Print ver
+  -V, --version                Print version
+```
+
+## Example Config
+
+Save config as `.augre/config.toml` in the 
