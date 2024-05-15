@@ -55,3 +55,5 @@ Commands:
 Options:
   -d, --data-path <DATA_PATH>  The path to the data directory [default: .augre]
   -m, --mode <MODE>            The default operation mode [default: openai]
+  -y, --yes                    Whether to skip the confirmation prompt
+  -
