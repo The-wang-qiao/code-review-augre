@@ -66,4 +66,4 @@ Save config as `.augre/config.toml` in the directory that needs to be reviewed
 
 ```toml
 mode = "LocalGpu"
-model_ur
+model_url = "https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGML/resolve/main/code
